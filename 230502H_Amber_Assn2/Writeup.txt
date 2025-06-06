@@ -1,0 +1,54 @@
+Combat:
+RPC for
+player/enemy hp,
+enemy drops and reward,
+player attack input,
+enemy bullet collision rpc,
+assist player at 0 hp rpc,
+notify assistee/assisted
+
+Stealth:
+rpc for
+catch specific player on detected,
+notify other players which player caught
+
+Inventory:
+rpc for
+Item pickup collision,
+item use,
+notify item use (to user and other players)
+
+Checkpoints:
+rpc for
+when sufficient items submitted, unlock progression (e.g ghost generator, door blocking end)
+
+Boss (non-combat/drops areas):
+(Ghost trap: Players summon ghost companion, press G to set themselves as a ghost "waypoint" and ghost deals damage to boss on collision, and drifts off to despawn afterwards. 1 ghost at a time)
+rpc(s) for
+when boss spawn/despawn
+check/set if ghost companion has already been summoned (1 existing at a time), 
+setting ghost companion target on player input and checking if can set target,
+spawning/despawning ghost
+
+Hidden Mission:
+rpc for
+notifying how many bombs left to find until mission complete,
+reward on mission complete
+
+Game win:
+rpc for
+who escaped to the finish area enable the game clear screen
+
+Emotes
+
+
+
+
+-------controls-------
+wasd: movement
+left click: attack
+e: submit item
+g: call ghost
+h: assist 0 health player
+e + 1/2/3: emote
+m (next to bomb): find bomb
